@@ -132,11 +132,11 @@ static void _load_properties(char *data)
 		}
 		key = ptoken;
 		tmp = strstr(ptoken, "=");
-		ops = tmp;
-		ops = ops - 2;
-		while (isspace(*ops--));
+		ops = tmp - 1;
+		while (isspace(*ops)) ops--;
+		tmp++;
 		*++ops = 0; //for key
-		while(isspace(*tmp++));
+		while(isspace(*tmp)) tmp++;
 		value = tmp;
 		property_set(key, value);
 	}
