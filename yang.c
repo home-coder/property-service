@@ -126,8 +126,8 @@ static void _load_properties(char *data)
 		ptoken = token;
 
 		while (isspace(*ptoken)) ptoken++;
-		if (ptoken[0] == '#' || !strcmp(ptoken, "\n")) {
-			dbgprint("%s\n", ptoken);
+		if (ptoken[0] == '#' || ptoken[0] == 0) {
+			//dbgprint("%s\n", ptoken);
 			continue;
 		}
 		key = ptoken;
