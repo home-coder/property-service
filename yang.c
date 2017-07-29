@@ -155,9 +155,14 @@ static void load_properties_from_file(const char *fn)
 	}
 }
 
+static void load_persistent_properties()
+{
+}
+
 int main()
 {
 	load_properties_from_file(PROP_PATH);
+	load_persistent_properties();
 
 	return 0;
 }
