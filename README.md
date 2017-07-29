@@ -1,6 +1,8 @@
 # property-service
 system/core/property-service
 
+添加一个参考链接
+http://blog.csdn.net/value_liu/article/details/35276349
 
 计划任务：
 
